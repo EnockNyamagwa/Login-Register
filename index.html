@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup Page Design 2 by Enock</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e8e5f29d4b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="top_box">
+                <div class="buttonz">
+                    <button id="signupBtn">Sign up</button>
+                    <button id="signinBtn">Sign in</button>
+                </div>
+            </div>
+            <div class="form-container">
+                <div class="signupPage" id="signupPage">
+                    <form class="signup">
+                        <h1>Sign Up</h1>
+                        <p>Please provide the following information to create your accout.</p>
+                        <hr>
+                        <div class="texgrp">
+                            <input type="text" class="inputs" placeholder="First name" required>
+                            <input type="text" class="inputs" placeholder="Last name" required>
+                        </div>
+                        
+                        <input type="email" class="inputs" placeholder="Email Address" required>
+                        <input type="text" class="inputs" placeholder="eg taff_eno254" required>
+                        <input type="password" class="inputs" placeholder="Password" required>
+                        <input type="password" class="inputs" placeholder="Confirm Password" required>
+    
+                        <input type="checkbox" name="" id="checkbx">
+                        <label for="checkbx">I agree to the <a href="#">Terms and conditions</a></label>
+    
+                        <button>Sign Up</button>
+                    </form>
+                </div>
+                <div class="signinPage" id="signinPage">
+                    <form class="signin">
+                    
+                        <h1>Welcome Back</h1>
+                        <p>We are glad you are back. Please Login to proceed to your accout</p>
+                        <hr>
+                        
+                        <input type="text" class="inputs username" placeholder="Username eg taff_eno254" required>
+                        <input type="password" class="inputs" placeholder="Password" required>
+    
+                        <input type="checkbox" name="" id="checkbx2">
+                        <label for="checkbx2">Please keep me logged in</a></label>
+    
+                        <button style="margin-bottom: 3.5rem;">Login</button>
+
+                        <hr>
+                        <small>Or Sign in with</small>
+                        <div class="socials">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-envelope"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var signinPage = document.getElementById('signinPage');
+        var signupPage = document.getElementById('signupPage');
+
+        var signinBtn = document.getElementById('signinBtn');
+        var signupBtn = document.getElementById('signupBtn');
+
+        signinBtn.addEventListener('click', () =>{
+            // signupPage.style.right = "-500px";
+            signupPage.style.right = "-100%";
+            signinPage.style.left = "0%";
+            
+        })
+
+        signupBtn.addEventListener('click', () =>{
+            signupPage.style.right = "0%";
+            signinPage.style.left = "-100%";
+
+        })
+    </script>
+</body>
+</html>

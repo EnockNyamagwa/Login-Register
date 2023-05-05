@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+:root{
+    --bgColor: #a98467;
+    --primaryColor: #3d405b;
+    --secondaryColor: #335c67;
+}
+*{
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--bgColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(0,0,0,.7),rgb(0,0,0,.7)),url(https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+    background-position: center;
+}
+.box{
+    height: 90%;
+    width: 30%;
+    background-color: #ffff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.top_box{
+    width: 100%;
+    height: 20%;
+    background-image: linear-gradient(62deg, #8EC5FC, #E0C3FC);
+    border-radius: 12px 12px 40px 40px;
+    position: relative;
+}
+.top_box .buttonz{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.buttonz button{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: .9rem 1rem;
+    margin-top: 1.5rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    background: transparent;
+}
+.buttonz button:hover{
+    background: white;
+    color: #000;
+}
+
+.form-container{
+    position: relative;
+    /* overflow: hidden; */
+}
+.form-container form{
+    padding: 0 2rem;
+}
+.inputs{
+    width: 100%;
+    outline: none;
+    border: none;
+    border: 1px solid #000;
+    padding: .4rem 1rem;
+    color: #000;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-bottom: .7rem;
+}
+.texgrp{
+    display: flex;
+    justify-content: space-around;
+    gap: 12px;
+    margin-top: 1.2rem;
+}
+.username{
+    margin-top: 1.2rem;
+}
+h1{
+    text-align: center;
+    color: #000;
+    margin-bottom: 1rem;
+}
+p{
+    line-height: 23px;
+    text-align: center;
+    color: #344e41;
+    margin-bottom: 1rem;
+}
+form button{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: .9rem 1rem;
+    margin-top: 1.5rem;
+    color: #fff;
+    background-image: linear-gradient(62deg, #8EC5FC, #E0C3FC);
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: .7s ease-in-out;
+}
+button:hover{
+    background-image: linear-gradient(182deg, #8EC5FC, #E0C3FC);
+
+}
+.signupPage{
+    position: absolute;
+    width: 480px;
+    transition: 0.6s ease-in-out;
+}
+.signinPage{
+    position: absolute;
+    width: 480px;
+    transition: 0.6s ease-in-out;
+    left: -30rem;
+}
+
+.socials{
+    width: 100%;
+    height: 40px;
+    /* background-color: red; */
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.socials i{
+    /* color: #fff; */
+    font-size: 35px;
+    cursor: pointer;
+}
+.socials .fa-facebook{
+    color: #3b5998 ;
+}
+.socials .fa-twitter{
+    color: #00acee ;
+}
+.socials .fa-envelope{
+    color: #EA4335 ;
+}
+.socials .fa-instagram{
+    color: #fccc63;
+}
+.signin small{
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 9rem;
+    /* color: red; */
+    font-size: 1rem;
+}
